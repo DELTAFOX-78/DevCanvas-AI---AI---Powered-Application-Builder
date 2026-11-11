@@ -1,0 +1,7 @@
+package com.deltafox78.lovable.workspace_service.repository;
+
+import com.deltafox78.lovable.workspace_service.entity.ProcessedEvent;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProcessedEventRepository extends JpaRepository<ProcessedEvent, String> {
+}

@@ -1,0 +1,23 @@
+# Shared by every service (served by config-service in "native" mode).
+# ${...} values come from local/.env, exported by the start script.
+jwt:
+  secret-key: ${JWT_SECRET}
+  secretKey: ${JWT_SECRET}
+
+# No Eureka locally; services call each other by explicit URL.
+eureka:
+  client:
+    enabled: false
+spring:
+  cloud:
+    discovery:
+      enabled: false
+
+ACCOUNT_SERVICE_URI: http://localhost:9010
+WORKSPACE_SERVICE_URI: http://localhost:9020
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

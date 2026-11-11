@@ -1,0 +1,21 @@
+# Secrets
+.env
+*.env
+!.env.example
+
+# Docs / study material
+*.pdf
+
+# Build & runtime
+target/
+node_modules/
+dist/
+logs/
+*.log
+*.pid
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
